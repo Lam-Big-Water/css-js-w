@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    .modal {
+      /*
+        For this party trick, we need:
+        - Position absolute or fixed
+        - All sides set to '0'
+        - explicit dimensions
+        - auto margins
+      */
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 85%;
+      height: 200px;
+      margin: auto;
+    }
+
+    .container {
+  margin: 50px;
+  border: solid hotpink;
+  /*
+    This property breaks
+    fixed positioning on
+    ALL descendants:
+  */
+  transform: translate(1px, 1px);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+
+
+/*
+  Artificially boost the size of the
+  "body", so that the frame can be
+  scrolled.
+*/
+html, body {
+  height: 125%;
+}
+  </style>
+  
+  <div>
+    <div class="modal-backdrop"></div>
+    <div class="modal">Hello World</div>
+  </div>
+  <p>Background text</p>
+
+  <div class="container">
+    <button class="fixed">
+      ☹️ I'm not really fixed
+    </button>
+  </div>
+</body>
+</html>
+
+<div class="containing-block">
+  <div class="scroll-container">
+    <ol>
+      <!-- Imagine a list here -->
+    <ol>
+    <div class="tooltip">
+      Boop
+    </div>
+  </div>
+</div>

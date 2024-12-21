@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+h1 {
+  width: min-content;
+  background-color: fuchsia;
+}
+h2 {
+  width: max-content;
+  background-color: mediumspringgreen;
+}
+h3 {
+  width: max-content;
+  background-color: mediumspringgreen;
+}
+h4 {
+  /* Firefox requires a vendor prefix */
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: peachpuff;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+.card {
+  max-width: 350px;
+  padding: 16px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+figure {
+  width: min-content;
+  padding: 8px;
+  border: 1px solid;
+  margin-bottom: 32px;
+}
+
+figure img {
+  margin-bottom: 8px;
+}
+
+figcaption {
+  text-align: center;
+  color: #666666;
+}
+
+.blue {
+  background-color: lightblue;
+}
+.pink {
+  background-color: lightpink;
+}
+
+p {
+  margin-top: 32px;
+}
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      This heading is shrunk down.
+    </h1>
+    <h2>
+      This heading is constrained using max-content, which causes the line to extend far longer than it otherwise would!
+    </h2>
+    <h3>A short heading</h3>
+    <h4>Short</h4>
+<h4>A mid-length heading</h4>
+<h4>The longest heading you've ever seen in your life, will it ever end, ahhhhh ohmigod 😬😬😬😬😬😬😬</h4>
+
+<div class="card">
+  <p>
+    Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.
+  </p>
+</div>
+
+<figure>
+  <img
+    alt="A hallway with rainbow-coloured lighting"
+    src="https://science.nasa.gov/wp-content/uploads/2024/11/hubble-ngc1672-withsn-potw2445c.jpg?w=2048&format=webp"
+    style="width: 200px;"
+  />
+  <figcaption>
+    Photo by Efe Kurnaz in Camp Nou, Barcelona, Spain. Found on Unsplash.
+  </figcaption>
+</figure>
+
+<figure>
+  <img
+    alt="A yawning kitten"
+    src="https://science.nasa.gov/wp-content/uploads/2024/11/hubble-ngc1672-withsn-potw2445c.jpg?w=2048&format=webp"
+    style="width: 250px;"
+  />
+  <figcaption>
+    Unknown photographer. Found on Unsplash.
+  </figcaption>
+</figure>
+
+<section class="blue">
+  <p>Paragraph One</p>
+</section>
+<section class="pink">
+  <p>Paragraph Two</p>
+</section>
+  </body>
+</html>

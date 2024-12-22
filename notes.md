@@ -483,4 +483,5 @@ Text is still selectable
 Form elements can still be focused
 
 
-# lesson - 3
+# lesson - 4
+- hello flexbox - display: flex doesn't change the element's layout mode, it changes its childrens' layout mode. In fact, display: flex does cause the parent element to become a block-level element.
